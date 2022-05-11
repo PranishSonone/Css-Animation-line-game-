@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.wrapper{
+    width: 100%;
+    /* cursor:crosshair; */
+    text-align: center;
+    position: relative;
+}
+.wrapper p{
+    padding-bottom: 30px;
+}
+
+.moving-ling {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+.bottem-line , .top-line{
+    margin: auto;
+    width: 60%;
+    height: 20px;
+    background-color: blue;
+
+}
+.bottem-line{
+    position: absolute;
+    position: absolute;
+	bottom: -20px;
+	left: 20%;
+}
+.line {
+    background:orchid;
+    width: 20px;
+    height: 100%;
+}
+.line:nth-child(odd){
+    animation-name: MoveUpDown;
+   animation-duration: 0.6s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(even){
+   align-self: flex-end;
+   animation-name: MoveUpDown;
+   animation-duration: 0.8s;
+   animation-timing-function:ease;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(1){
+    animation-name: MoveUpDown;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(2){
+    animation-name: MoveUpDown;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-in;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(3){
+    animation-name: MoveUpDown;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(4){
+    animation-name: MoveUpDown;
+   animation-duration: 2s;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(5){
+    animation-name: MoveUpDown;
+   animation-duration: 1.8s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(5){
+    animation-name: MoveUpDown;
+   animation-duration: 1.4s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(8){
+    animation-name: MoveUpDown;
+   animation-duration: 0.8s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+.line:nth-child(10){
+    animation-name: MoveUpDown;
+   animation-duration: 0.6s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes MoveUpDown {
+
+    0%{
+       
+       height: 100%;
+
+    }
+
+    50% {
+       
+        height: 80%;
+}
+}
+.game-over,
+.exito{
+   display:none;
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   z-index:10;
+   text-align: center;
+   transition:linear ;
+   -webkit-transition:linear ;
+   -moz-transition:linear ;
+   -ms-transition:linear ;
+   -o-transition:linear ;
+}
+.game-over{
+    
+	background:red;
+}
+
+.line:nth-child(11){
+    animation-name: unset;
+}
+.line:nth-child(12){
+    animation-name: unset;
+    background: green;
+}
+.line:nth-child(13){
+    animation-name: unset;
+    background: green;
+}
+
+
+.game-over:hover{
+	display:block;
+}
+.line:hover ~ .game-over{
+	display:block;
+}
+
+.exito:hover{
+	display:block;
+}
+.line:nth-child(12):hover ~.exito{
+    display:block;
+}
+h2{
+    color: white;
+}
+
+.top-line:hover + section .game-over {
+    display: block;
+}
+.bottem-line:hover + section .game-over {
+    display: block;
+}
+
+
+
