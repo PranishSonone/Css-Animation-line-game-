@@ -84,7 +84,7 @@ body {
 }
 .line:nth-child(3){
     animation-name: MoveUpDown;
-   animation-duration: 1.5s;
+   animation-duration: 1s;
    animation-timing-function: linear;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -92,7 +92,7 @@ body {
 }
 .line:nth-child(4){
     animation-name: MoveUpDown;
-   animation-duration: 2s;
+   animation-duration: 1s;
    animation-timing-function: ease-in-out;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -100,7 +100,7 @@ body {
 }
 .line:nth-child(5){
     animation-name: MoveUpDown;
-   animation-duration: 1.8s;
+   animation-duration: 1s;
    animation-timing-function: linear;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -108,7 +108,7 @@ body {
 }
 .line:nth-child(5){
     animation-name: MoveUpDown;
-   animation-duration: 1.4s;
+   animation-duration: 1s;
    animation-timing-function: linear;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -116,7 +116,7 @@ body {
 }
 .line:nth-child(8){
     animation-name: MoveUpDown;
-   animation-duration: 0.8s;
+   animation-duration: 0.6s;
    animation-timing-function: linear;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -124,7 +124,7 @@ body {
 }
 .line:nth-child(10){
     animation-name: MoveUpDown;
-   animation-duration: 0.6s;
+   animation-duration: 0.2s;
    animation-timing-function: linear;
    animation-direction: alternate;
    animation-iteration-count: infinite;
@@ -159,6 +159,7 @@ body {
    -moz-transition:linear ;
    -ms-transition:linear ;
    -o-transition:linear ;
+  
 }
 .game-over{
     
@@ -180,6 +181,9 @@ body {
 
 .game-over:hover{
 	display:block;
+    display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 .line:hover ~ .game-over{
 	display:block;
@@ -187,19 +191,29 @@ body {
 
 .exito:hover{
 	display:block;
+    display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 .line:nth-child(12):hover ~.exito{
     display:block;
 }
 h2{
     color: white;
+ 
 }
 
-.top-line:hover + section .game-over {
+.top-line:hover + .bottem-line + section .game-over {
     display: block;
+    display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 .bottem-line:hover + section .game-over {
     display: block;
+    display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 
 
