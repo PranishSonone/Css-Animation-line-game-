@@ -218,3 +218,55 @@ h2{
 
 
 
+@media screen and (max-width: 480px){
+    .line {
+       
+        width: 10px;
+    }
+        
+    .bottem-line, .top-line {
+       
+        width: 75%;
+       
+    }
+    .bottem-line {
+        left: 13%;
+    }
+    .moving-ling {
+        width: 75%;
+        height: 150px;
+       
+    }
+}
+
+.arrow{
+    position: absolute;
+	font-size: 13px;
+	/* color: red; */
+	top: 80%;
+	left: 11%;
+}
+.fa{
+    font-size: 30px;
+    color: red;
+}
+.arrow {
+    display: block;
+    animation-name: fade-in-out;
+   animation-duration: 0.4s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+@keyframes fade-in-out{
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+        @-webkit-keyframes fade-in-out{
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+
